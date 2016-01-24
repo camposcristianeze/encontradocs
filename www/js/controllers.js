@@ -9,6 +9,8 @@ angular.module('app.controllers', [])
 })
    
 .controller('buscoCtrl', function($scope) {
-
+    $scope.locationChanged = function (location) {
+        alert(location);
+    };
 })
  

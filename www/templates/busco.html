@@ -11,9 +11,8 @@
                 <i class="icon ion-search placeholder-icon"></i>
                 <input type="search" placeholder="¿Qué más perdiste?">
             </label>
-        </form>
-        <div class="button-bar"></div>
-        <form class="list">
+            <h2>Otros Datos</h2>
+
             <label class="item item-input">
                 <input type="text" placeholder="Nombre y Apellido">
             </label>
@@ -26,11 +25,15 @@
             <label class="item item-input">
                 <input type="text" placeholder="Teléfono">
             </label>
-            <label class="item item-input">
-                <i class="icon ion-search placeholder-icon"></i>
-                <input type="search" placeholder="¿Dónde lo perdiste?">
-            </label>
+            <!--<label>-->
+                <!--<i class="icon ion-search placeholder-icon"></i>-->
+                <!--<input type="search" placeholder="¿Dónde lo perdiste?">-->
+                <ion-google-place placeholder="¿Dónde lo perdiste?" ng-model="data.address" required name="address" location-changed="locationChanged"/>
+            <!--</label>-->
+            <div class="padding">
+                <button type="submit" class="button button-block button-balanced">Enviar</button>
+            </div>
         </form>
-        <button class="button button-balanced button-block ">Enviar</button>
+
     </ion-content>
 </ion-view>
