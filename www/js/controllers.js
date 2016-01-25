@@ -4,7 +4,7 @@ angular.module('app.controllers', [])
 
     })
 
-    .controller('encontréCtrl', ['$scope', 'Upload', '$timeout', function ($scope, Upload, $timeout) {
+    .controller('encontreCtrl', ['$scope', 'Upload', '$timeout', function ($scope, Upload, $timeout) {
         $scope.upload = function (dataUrl) {
             Upload.upload({
                 url: 'https://angular-file-upload-cors-srv.appspot.com/upload',

@@ -20,10 +20,10 @@ angular.module('app.routes', [])
     
       
         
-    .state('encontré', {
+    .state('encontre', {
       url: '/encontre',
-      templateUrl: 'templates/encontré.html',
-      controller: 'encontréCtrl'
+      templateUrl: 'templates/encontre.html',
+      controller: 'encontreCtrl'
     })
         
       
@@ -31,7 +31,7 @@ angular.module('app.routes', [])
       
         
     .state('busco', {
-      url: '/page5',
+      url: '/busco',
       templateUrl: 'templates/busco.html',
       controller: 'buscoCtrl'
     })
