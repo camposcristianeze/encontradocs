@@ -1,34 +1,33 @@
 <ion-view title="Busco">
     <ion-content overflow-scroll="true" padding="true" class="has-header">
         <h2>¿Qué buscás?</h2>
-        <form class="list">
-            <ion-checkbox ng-model="docs.dni">DNI</ion-checkbox>
-            <ion-checkbox ng-model="docs.sube">SUBE</ion-checkbox>
-            <ion-checkbox ng-model="docs.tarjetas">Tarjetas Crédito/Débito</ion-checkbox>
-            <ion-checkbox ng-model="docs.registro">Registro de Conducir</ion-checkbox>
-            <ion-checkbox ng-model="otros.on">Otros</ion-checkbox>
-            <label class="item item-input" ng-show="otros.on">
-                <i class="icon ion-search placeholder-icon"></i>
-                <input type="search" ng-model="docs.otros" placeholder="¿Qué más perdiste?">
-            </label>
+        <form>
+            <div class="list">
+                <ion-checkbox ng-model="docs.dni">DNI</ion-checkbox>
+                <ion-checkbox ng-model="docs.sube">SUBE</ion-checkbox>
+                <ion-checkbox ng-model="docs.tarjetas">Tarjetas Crédito/Débito</ion-checkbox>
+                <ion-checkbox ng-model="docs.registro">Registro de Conducir</ion-checkbox>
+                <ion-checkbox ng-model="otros.on">Otros</ion-checkbox>
+                <label class="item item-input" ng-show="otros.on">
+                    <i class="icon ion-search placeholder-icon"></i>
+                    <input type="search" ng-model="docs.otros" placeholder="¿Qué más perdiste? Ejemplo: Llaves, carnet obra social, monedero">
+                </label>
+            </div>
             <h2>Otros Datos</h2>
-            <label class="item item-input">
-                <input ng-model="data.name" type="text" placeholder="Nombre y Apellido">
-            </label>
-            <label class="item item-input">
-                <input ng-model="data.dni" type="text" placeholder="DNI">
-            </label>
-            <label class="item item-input">
-                <input ng-model="data.email" type="text" placeholder="E-mail">
-            </label>
-            <label class="item item-input">
-                <input ng-model="data.phone" type="text" placeholder="Teléfono">
-            </label>
-                <!--<label>-->
-                <!--<i class="icon ion-search placeholder-icon"></i>-->
-                <!--<input type="search" placeholder="¿Dónde lo perdiste?">-->
-                <ion-google-place placeholder="¿Dónde lo perdiste?" ng-model="data.address" required name="address" location-changed="locationChanged"/>
-                <!--</label>-->
+            <div class="list">
+                <label class="item item-input">
+                    <input ng-model="data.name" type="text" placeholder="Nombre y Apellido">
+                </label>
+                <label class="item item-input">
+                    <input ng-model="data.dni" type="text" placeholder="DNI">
+                </label>
+                <label class="item item-input">
+                    <input ng-model="data.email" type="text" placeholder="E-mail">
+                </label>
+                <label class="item item-input">
+                    <input ng-model="data.phone" type="text" placeholder="Teléfono">
+                </label>
+                <ion-google-place placeholder="¿Dónde lo perdiste?" ng-model="data.address" required name="address" location-changed="locationChanged" />
             </div>
             <div class="padding">
                 <button type="submit" class="button button-block button-balanced">Enviar</button>
