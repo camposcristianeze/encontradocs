@@ -2,10 +2,12 @@
 	position: relative;
 	width: 100%;
 	overflow: visible;
+    padding: 6px 0 5px 16px;
 }
-	.ion-place-tools-autocomplete input {
+
+.ion-place-tools-autocomplete input {
 		width: 100%;
-	}
+}
 
 .ion-place-tools-autocomplete-dropdown {
 	position: absolute;
