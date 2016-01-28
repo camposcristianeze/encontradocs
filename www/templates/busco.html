@@ -1,7 +1,7 @@
 <ion-view title="Busco">
     <ion-content overflow-scroll="true" padding="true" class="has-header">
         <h2>¿Qué buscás?</h2>
-        <form>
+        <form ng-submit="">
             <div class="list">
                 <ion-checkbox ng-model="docs.dni">DNI</ion-checkbox>
                 <ion-checkbox ng-model="docs.sube">SUBE</ion-checkbox>
@@ -10,7 +10,7 @@
                 <ion-checkbox ng-model="otros.on">Otros</ion-checkbox>
                 <label class="item item-input" ng-show="otros.on">
                     <i class="icon ion-search placeholder-icon"></i>
-                    <input type="search" ng-model="docs.otros" placeholder="¿Qué más perdiste? Ejemplo: Llaves, carnet obra social, monedero">
+                    <input type="search" ng-model="docs.otros" placeholder="¿Qué más perdiste? (Separado por comas) Ejemplo: Llaves, carnet obra social, monedero">
                 </label>
             </div>
             <h2>Otros Datos</h2>
